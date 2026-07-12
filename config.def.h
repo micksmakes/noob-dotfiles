@@ -42,6 +42,14 @@ static int log_level = WLR_ERROR;
 
 static const Rule rules[] = {
 	/* app_id             title       tags mask     isfloating   monitor */
+	/* Browser */
+	{ "Brave",   	      NULL,  1 << 0,    0,          -1 }, /* start on Only tag "1" */
+	/* Code */
+	{ "nvim .",           NULL,  1 << 1,    0,          -1 }, /* start on ONLY tag "2" */
+	/* Terminal */
+	{ "foot",             NULL,  1 << 3,    0,          -1 }, /* start on ONLY tag "3" */
+	/* Email */
+	{ "aerc",             NULL,  1 << 4,    0,          -1 }, /* start on ONLY tag "4" */
 	{ "Gimp_EXAMPLE",     NULL,       0,            1,           -1 }, /* Start on currently visible tags floating, not tiled */
 	{ "firefox_EXAMPLE",  NULL,       1 << 8,       0,           -1 }, /* Start on ONLY tag "9" */
     /* default/example rule: can be changed but cannot be eliminated; at least one rule must exist */
