@@ -1,5 +1,5 @@
 #!/bin/sh
-slstatus -s | dwl -s"sh -c 'swaybg -i /home/mick/wallpaper/city_night.jpg &'"
+slstatus -s | dwl -s "sh -c 'swaybg -i /home/mick/wallpaper/city_night.jpg &'"
 
 # Idle and screen lock settings
 swayidle -w \
